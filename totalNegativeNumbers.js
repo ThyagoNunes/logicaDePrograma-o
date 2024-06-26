@@ -12,5 +12,4 @@ function totalNumbersNegative(numbers) {
   console.log(countNegativeNumbers);
   console.log(`[${storageNegativeNumbers}]`)
 }
-
 totalNumbersNegative(numbers);
