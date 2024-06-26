@@ -1,15 +1,16 @@
 function fibonacci(position) {
     let firstPosition = 0;
     let secondPosition = 1;
-    let nextPosition;
+    let valuesFibonacci = [firstPosition, secondPosition]
+        
+    for (let i = 2; i < position; i++){
 
-    for(let i = 1; i < position; i++){
-        nextPosition = firstPosition + secondPosition;
+        let nextPosition = firstPosition + secondPosition ;
+        valuesFibonacci.push(nextPosition);
+
         firstPosition = secondPosition;
         secondPosition = nextPosition;
     }
-    console.log(nextPosition);
+    console.log(valuesFibonacci);
 }
-fibonacci(11)
-
-/* 0 1 1 2 3 5 8 13 21 34 55 89 144 */
+fibonacci(15)
